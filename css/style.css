@@ -1,0 +1,212 @@
+/* seletor(éo alvo que o css vai atingir no html) {
+    Formatação - Propriedadesque a tag vai exibir no html- qual roupa ela vai usar 
+}
+*/
+
+/* Sempre que fizer um arquivo CSS, colocar esse RESET para controlar melhor as margens */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Gamja+Flower&family=Lato:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html {
+    height: 100%;
+} */
+
+header {
+    background-color: #727272;
+    height: 70px;
+}
+
+.header-flex{
+    justify-content: space-between; /*alinhamento em linha dos containers*/
+    display: flex;
+    align-items: center;/*alinhamento em coluna*/
+}
+
+.container-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    /* border: 2px dotted red; */
+
+}
+
+h1 {
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+        
+}   
+
+span {
+
+    font-family: 'Gamja Flower', cursive;
+    font-style: italic;
+    font-size: 40px;
+
+}
+
+nav {
+    
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav a {
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    transition: background-color 1s;
+
+}
+
+nav a:hover {
+    background-color: rgb(172, 172, 172);
+    border-radius: 5px;
+}
+
+
+body {
+    background-color: #efefef;
+    color: #9A9A9A;
+    /* height: 100%; */
+    font-family: 'Lato', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2% !important;
+}
+
+section{   
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 70%;
+
+  
+}
+
+section p,section h2 {
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 4%;
+    font-weight: 300;
+  
+}
+
+
+.lapis{
+    width: 100%;
+    height: 300px;
+    
+}
+
+aside{
+   
+    width: 25%;
+    font-weight: 300;
+   
+}
+
+aside article{
+        
+    background-color: white;   
+    margin-bottom: 20px;  
+    padding-bottom: 20px;
+    
+
+  }
+aside article h3{
+    border-bottom: 1px solid #efefef;
+    padding-top:5px ;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+aside article ul li{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+aside article h3,aside article p,aside article ul {
+    font-size: 14px;
+    font-weight: 300;
+    
+}
+
+aside article p {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+aside article form  {
+ 
+    display: flex;
+    justify-content: space-between;    
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+
+aside article form button {
+    width: 18%;
+    height:30px;
+    border: 2px solid #efefef;
+    background-color: #727272;
+    color: #efefef;
+
+}
+
+aside article form input{
+    border: 2px solid #efefef;
+    width: 75%;
+    height:30px;
+}
+
+aside article form .inscreva-se {
+    margin: 0 auto;
+ 
+
+}
+
+::placeholder{
+    font-size: 10px;
+
+    color:#9A9A9B;
+}
+
+footer {
+    margin: 20px;
+    background-color: #727272;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+footer .direitos {
+    
+    text-align: center;
+    font-size: 14px;
+    
+
+}
